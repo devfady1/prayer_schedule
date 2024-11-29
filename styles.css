@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #eef2f5;
+  color: #2b2b2b;
+  line-height: 1.7;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #1e1e2f;
+  color: #d4d4d8;
+}
+
+header {
+  background-color: #446ccf;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode header {
+  background-color: #3b4a6b;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode main {
+  background: #2a2a40;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode table {
+  background: #323242;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: center;
+  border: none;
+}
+
+table th {
+  background-color: #446ccf;
+  color: #ffffff;
+}
+
+body.dark-mode table th {
+  background-color: #3b4a6b;
+}
+
+table td {
+  background-color: #ffffff;
+  color: #2b2b2b;
+}
+
+body.dark-mode table td {
+  background-color: #2a2a40;
+  color: #d4d4d8;
+}
+
+table tr:hover {
+  background-color: #f1f6fc;
+}
+
+body.dark-mode table tr:hover {
+  background-color: #454565;
+}
+
+button {
+  background-color: #5a79e8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #4b69c6;
+}
+
+body.dark-mode button {
+  background-color: #4a5ca5;
+}
+
+body.dark-mode button:hover {
+  background-color: #3d4e85;
+}
+
+#prayer-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode #prayer-content {
+  background-color: #2a2a40;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+#prayer-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #446ccf;
+}
+
+body.dark-mode #prayer-content h2 {
+  color: #5a79e8;
+}
+
+#prayer-content img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #446ccf;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode footer {
+  background-color: #3b4a6b;
+}
+
+#dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #eef2f5;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+body.dark-mode #dark-mode-toggle {
+  background-color: #1e1e2f;
+  color: #d4d4d8;
+}
+
+@media (max-width: 480px) {
+  #dark-mode-toggle {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  table th, table td {
+    padding: 10px;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
