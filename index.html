@@ -3,140 +3,170 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>مواقيت الصلاة المسيحية</title>
+    <title>صلاة الساعه الثالثه</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="+.png" type="image/png">
+    <link rel="icon" href="+.png" type="image/png" />
   </head>
   <body>
     <header>
-      <h1>مواقيت الصلاة المسيحية</h1>
-      <p>التوقيتات محدثة يوميًا حسب الموقع الجغرافي.</p>
+      <h1>صلاة الساعه الثالثه</h1>
     </header>
 
     <main>
-      <section id="next-prayer">
-        <h2>الصلاة القادمة</h2>
-        <p><span id="prayer_name"></span>
-          </p>
-        <a id="prayer_link" href="" target="_blank">
-          <button>ابدأ الصلاة</button>
-        </a>
+        <section id="next-prayer">
+            <h2>الصلاة القادمة</h2>
+            <p><span id="prayer_name"></span>
+              </p>
+            <a id="prayer_link" href="" target="_blank">
+              <button>ابدأ الصلاة</button>
+            </a>
+          </section>
+
+      <section id="introduction">
+        <h2>مقدمة كل ساعة</h2>
+        <p>هنا يمكنك وضع مقدمة الصلاة لكل ساعة...</p>
+      </section>
+    
+
+      <section id="lord-prayer">
+        <h2>الصلاة الربانية</h2>
+        <p>هنا نص الصلاة الربانية...</p>
+      </section>
+    
+
+      <section id="thanksgiving-prayer">
+        <h2>صلاة الشكر</h2>
+        <p>هنا نص صلاة الشكر...</p>
       </section>
 
-      <section id="prayer-timetable">
-        <h2>جدول الصلاة</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>الصلاة</th>
-              <th>التوقيت</th>
-              <th>ابدأ الصلاة</th>
-            </tr>
-          </thead>
-          <tbody>
-           </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>صلاة باكر</td>
-              <td>6:00 صباحًا</td>
-              <td>
-                <button onclick="window.location.href='baaker.html'">
-                  ابدأ
-                </button>
-              </td>
-            </tr>   
-            <tr>
-              <td>صلاة الثالثة</td>
-              <td>9:00 صباحًا</td>
-              <td>
-                <button
-                  onclick="window.open('https://st-takla.org/Agpeya/Agbeya_03_Terce_.html', '_blank')"
-                >
-                  ابدأ
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>صلاة السادسة</td>
-              <td>12:00 ظهرًا</td>
-              <td>
-                <button
-                  onclick="window.open('https://st-takla.org/Agpeya/Agbeya_06_Sext_.html', '_blank')"
-                >
-                  ابدأ
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>صلاة التاسعة</td>
-              <td>3:00 مساءً</td>
-              <td>
-                <button
-                  onclick="window.open('https://st-takla.org/Agpeya/Agbeya_09_None_.html', '_blank')"
-                >
-                  ابدأ
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>صلاة الغروب</td>
-              <td>6:00 مساءً</td>
-              <td>
-                <button
-                  onclick="window.open('https://st-takla.org/Agpeya/Agbeya_11_Vespers_.html', '_blank')"
-                >
-                  ابدأ
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>صلاة النوم</td>
-              <td>9:00 مساءً</td>
-              <td>
-                <button
-                  onclick="window.open('https://st-takla.org/Agpeya/Agbeya_12_Compline_.html', '_blank')"
-                >
-                  ابدأ
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>صلاة الستار</td>
-              <td>10:00 مساءً</td>
-              <td>
-                <button
-                  onclick="window.open('https://st-takla.org/Agpeya/Agbeya_Viel_.html', '_blank')"
-                >
-                  ابدأ
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>صلاه نصف الليل</td>
-              <td>12:00 صباحًا</td>
-              <td>
-                <button
-                  onclick="window.open('https://st-takla.org/Agpeya/Agbeya_Midnight_.html', '_blank')"
-                >
-                  ابدأ
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+
+      <section id="psalm-50">
+        <h2>المزمور الخمسون</h2>
+        <p>هنا نص المزمور الخمسون...</p>
       </section>
 
-      <section id="prayer-content">
-        <h2>نص الصلاة</h2>
-        <img id="prayer-image" src="" alt="صورة الصلاة" />
-        <p id="prayer-text"></p>
-        <button onclick="closePrayer()">إغلاق</button>
+      <section id="start-prayer">
+        <h2>بدء الصلاه</h2>
+        <p>هنا نص بدء الصلاة...</p>
+      </section>
+    
+      <section id="psalm-19">
+        <h2>المزمور التاسع عشر</h2>
+        <p>هنا نص المزمور الأول...</p>
+      </section>
+
+      <section id="psalm-22">
+        <h2>المزمور الثاني و العشرون</h2>
+        <p>هنا نص المزمور الثاني...</p>
+      </section>
+
+      <section id="psalm-23">
+        <h2>المزمور الثالث والعشروم</h2>
+        <p>هنا نص المزمور الثالث...</p>
+      </section>
+
+      <section id="psalm-25">
+        <h2>المزمور الخامس و العشرون</h2>
+        <p>هنا نص المزمور الرابع...</p>
+      </section>
+
+      <section id="psalm-28">
+        <h2>المزمور الثامن و العشرون</h2>
+        <p>هنا نص المزمور الخامس...</p>
+      </section>
+
+      <section id="psalm-29">
+        <h2>المزمور التاسع و العشرون</h2>
+        <p>هنا نص المزمور السادس...</p>
+      </section>
+
+      <section id="psalm-33">
+        <h2>المزمور الثالث و الثلاثون</h2>
+        <p>هنا نص المزمور الثامن...</p>
+      </section>
+
+      <section id="psalm-40">
+        <h2>المزمور الاربعون</h2>
+        <p>هنا نص المزمور الحادي عشر...</p>
+      </section>
+
+      <section id="psalm-42">
+        <h2>المزمور الثاني و الاربعون</h2>
+        <p>هنا نص المزمور الثاني عشر...</p>
+      </section>
+
+      <section id="psalm-44">
+        <h2>المزمور الرابع و الاربعون</h2>
+        <p>هنا نص المزمور الرابع عشر...</p>
+      </section>
+
+      <section id="psalm-45">
+        <h2>المزمور الخامس والاربعون</h2>
+        <p>هنا نص المزمور الخامس عشر...</p>
+      </section>
+
+      <section id="psalm-46">
+        <h2>المزمور السادس و الاربعون</h2>
+        <p>هنا نص المزمور الثامن عشر...</p>
+      </section>
+
+      <section id="gospel">
+        <h2>(إنجيل يوحنا 14: 26ـ15: 3)</h2>
+        <p>هنا نص الإنجيل...</p>
+      </section>
+
+      <section id="hymns">
+        <h2>القطع</h2>
+        <p>هنا نص القطع...</p>
+      </section>
+
+      <section id="holy-holy">
+        <h2>قدوس قدوس قدوس</h2>
+        <p>هنا نص قدوس قدوس قدوس...</p>
+      </section>
+
+      <section id="analyses">
+        <h2>التحليل</h2>
+        <p>هنا نص التحليل...</p>
+      </section>
+
+      <section id="final-prayer">
+        <h2>طلبة تصلى آخر كل ساعة</h2>
+        <p>هنا نص الطلبة...</p>
       </section>
     </main>
 
+    <button id="menu-toggle">📜</button>
+    <nav id="floating-menu" class="hidden">
+      <ul>
+        <li><a href="#introduction">مقدمة كل ساعة</a></li>
+        <li><a href="#lord-prayer">الصلاة الربانية</a></li>
+        <li><a href="#thanksgiving-prayer">صلاة الشكر</a></li>
+        <li><a href="#psalm-50">المزمور الخمسون</a></li>
+        <li><a href="#start-prayer">بدء الصلاة</a></li>
+        <li><a href="#psalm-19">المزمور التاسع عشر</a></li>
+        <li><a href="#psalm-22">المزمور الثاني و العشرون</a></li>
+        <li><a href="#psalm-23">المزمور الثالث و العشرون</a></li>
+        <li><a href="#psalm-25">المزمور الخامس و العشرون</a></li>
+        <li><a href="#psalm-28">المزمور الثامن و العشرون</a></li>
+        <li><a href="#psalm-29">المزمور التاسع و العشرون</a></li>
+        <li><a href="#psalm-33">المزمور الثالث و الثلاثون</a></li>
+        <li><a href="#psalm-40">المزمور الاربعون</a></li>
+        <li><a href="#psalm-42">المزمور الثاني و الاربعون</a></li>
+        <li><a href="#psalm-44">المزمور الرابع و الاربعون</a></li>
+        <li><a href="#psalm-45">المزمور الخامس و الاربعون</a></li>
+        <li><a href="#psalm-46">المزمور السادس و الاربعون</a></li>
+        <li><a href="#gospel">(إنجيل يوحنا 14: 26ـ15: 3)</a></li>
+        <li><a href="#hymns">القطع</a></li>
+        <li><a href="#holy-holy">قدوس قدوس قدوس</a></li>
+        <li><a href="#analyses">التحليل</a></li>
+        <li><a href="#final-prayer">طلبة تصلى آخر كل ساعة</a></li>
+      </ul>
+    </nav>
+
     <footer>
-      <p>© 2024 F.A.S_M.E_ATU موقع مواقيت الصلاة المسيحية</p>
+      <p>© 2024 F.A.S_M.E_ATU | موقع مواقيت الصلاة المسيحية</p>
     </footer>
     <button id="dark-mode-toggle">🌙</button>
     <script src="script.js"></script>
