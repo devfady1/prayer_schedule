@@ -141,7 +141,7 @@ body.dark-mode button:hover {
 #menu-toggle {
   position: fixed;
   top: 20px;
-  border: none;
+ 
   padding: 10px;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
