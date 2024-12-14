@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #eef2f5;
+  background-color: #cae3f7;
   color: #2b2b2b;
   line-height: 1.7;
   font-size: 16px;
@@ -30,7 +30,7 @@ header {
 }
 
 body.dark-mode header {
-  background-color: #3b4a6b;
+  background-color: #344363;
 }
 
 header h1 {
@@ -50,13 +50,27 @@ main {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  background: #ffffff;
+  background: #f2f9fd;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+#botton-next-prayer{
+  width: 300px;
+  height: 40px;
+}
+#fasl {
+  display: block;
+  margin: 20px auto; /* تضبط الصورة لتكون في المنتصف مع فراغ أعلى وأسفل */
+  width: 100%; /* اجعلها تمتد بعرض الصفحة */
+  max-width: 600px; /* تحديد أقصى عرض للصورة لتتناسب مع التصميم */
+  height: auto; /* يحافظ على نسبة العرض إلى الارتفاع */
 }
 
+#next-prayer {
+  text-align: center;
+}
 body.dark-mode main {
-  background: #2a2a40;
+  background: #202031;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -141,7 +155,7 @@ body.dark-mode button:hover {
 #menu-toggle {
   position: fixed;
   top: 20px;
- 
+  border: none;
   padding: 10px;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
@@ -164,13 +178,13 @@ body.dark-mode button:hover {
 
 body.dark-mode #dark-mode-toggle,
 body.dark-mode #menu-toggle {
-  background-color: #1e1e2f;
-  color: #d4d4d8;
+  background-color: #3e3e4b;
+  color: #a6a6e8;
 }
 
 /* Prayer Content Styles */
 #prayer-content {
-  background-color: #ffffff;
+  background-color: #fcdede;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
